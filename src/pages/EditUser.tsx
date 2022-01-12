@@ -2,7 +2,7 @@ import { ChangeEvent, useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../contexts/UserContext';
 
-export const Form = () => {
+export const EditUser = () => {
   const { state, dispatch } = useContext(UserContext);
   const [name, setName] = useState(state.user.name);
   const [email, setEmail] = useState(state.user.email);

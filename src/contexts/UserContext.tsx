@@ -1,18 +1,9 @@
 import { createContext, ReactNode, useReducer } from 'react';
 
 import { userInitialState, userReducer } from '../reducers/userReducer';
-import {
-  ThemeType,
-  themeInitialState,
-  themeReducer,
-} from '../reducers/themeReducer';
-import { ReducerActionType } from '../types/reducerActionType';
-import { User } from './types';
-
-type InitialStateType = {
-  user: User;
-  theme: ThemeType;
-};
+import { themeInitialState, themeReducer } from '../reducers/themeReducer';
+import { InitialStateType } from './types';
+import { ReducerActionType } from '../reducers/types';
 
 export type UserContextType = {
   state: InitialStateType;

@@ -1,5 +1,5 @@
 import { User } from '../contexts/types';
-import { ReducerActionType } from '../types/reducerActionType';
+import { ReducerActionType } from './types';
 
 export const userInitialState: User = {
   name: 'Davi Silva',

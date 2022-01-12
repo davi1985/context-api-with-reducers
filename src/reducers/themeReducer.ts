@@ -1,8 +1,4 @@
-import { ReducerActionType } from '../types/reducerActionType';
-
-export type ThemeType = {
-  status: 'dark' | 'light';
-};
+import { ReducerActionType, ThemeType } from './types';
 
 export const themeInitialState: ThemeType = {
   status: 'light',

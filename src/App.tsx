@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Form } from './pages/Form';
+import { EditUser } from './pages/EditUser';
 import { ShowData } from './pages/ShowData';
 import { UserContextProvider } from './contexts/UserContext';
 
@@ -13,7 +13,7 @@ export const App = () => {
         <hr />
 
         <Routes>
-          <Route path="/" element={<Form />} />
+          <Route path="/" element={<EditUser />} />
           <Route path="/list" element={<ShowData />} />
         </Routes>
       </BrowserRouter>
